@@ -29,9 +29,15 @@
  * only movs, not mov, supports immediates, and we can't use movs because
  * it doesn't support high regs. */
 #ifdef __thumb2__
+/*
 #define R7_OPERAND "rI"(r7)
+*/
+#define R0_OPERAND "rI"(r0)
 #else
+/*
 #define R7_OPERAND "r"(r7)
+*/
+#define R0_OPERAND
 #endif
 
 static inline long __syscall0(long n)
