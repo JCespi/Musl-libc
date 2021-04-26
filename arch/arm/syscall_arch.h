@@ -37,7 +37,7 @@
 /*
 #define R7_OPERAND "r"(r7)
 */
-#define R0_OPERAND
+#define R0_OPERAND "r"(r0)
 #endif
 
 static inline long __syscall0(long n)
