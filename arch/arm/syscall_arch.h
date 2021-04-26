@@ -60,7 +60,7 @@ static inline long __syscall1(long n, long a)
 	*/
 	register long r0 __asm__("r0") = n;
 	register long r1 __asm__("r1") = a;
-	__asm_syscall(R0_OPERAND, "r"(r1);
+	__asm_syscall(R0_OPERAND, "r"(r1));
 }
 
 static inline long __syscall2(long n, long a, long b)
